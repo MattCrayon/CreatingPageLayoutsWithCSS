@@ -3,9 +3,11 @@
     header h1 {
         font-size: 2.85rem;
     }
+
     header h2 {
         font-size: 1.5rem;
     }
+
     header img {
         height: 100px;
     }
@@ -14,6 +16,18 @@
         width: 50%;
     }
 
+    nav button {
+        display: none;
+    }
+
+    nav ul {
+        display: block;
+    }
+
+    nav li {
+        width: 25%;
+        float: left;
+    }
 
 
 }
