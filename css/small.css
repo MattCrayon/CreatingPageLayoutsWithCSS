@@ -18,6 +18,7 @@ body {
 
 .column {float: left; padding: 0 2vw; margin: 0 0 .75rem 0;}
 .small-12 {width: 100%;}
+.small-6 {width: 50%;}
 
 /* header rules */
 header {
@@ -76,9 +77,47 @@ main img {
     height: auto;
 }
 
+main h1, main h3 {
+    color: #orange;
+    font-style: italic;
+    margin: .5rem 0 .1rem 0;
+}
+
+main h1 {
+    font-size: 2rem;
+}
+
+main h3 {
+    font-size: 1.2rem;
+}
+
+main p {
+    font-size: 1.2rem;
+    margin: 0, 0, .3rem, 0;
+}
+
+.labeled {
+    position: relative;
+}
 
 
-
+.labeled h6, .labeled p {
+    position: absolute;
+    background-color: rgba(255, 255, 255, .7);
+    margin: 0;
+    width: 100%;
+    padding: .3rem 1rem;   
+}
+.labeled h6 {
+    top: 0;
+    font-size: 2rem;
+    font-weight: 300;
+}
+.labeled p {
+    bottom: 0;
+    font-weight: 700;
+    color: #b00;
+}
 
 
 
