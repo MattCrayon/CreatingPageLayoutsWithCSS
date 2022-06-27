@@ -44,7 +44,6 @@ h1 {
  * 2. Show the overflow in Edge and IE.
  */
 hr {
-  -webkit-box-sizing: content-box;
   box-sizing: content-box;
   /* 1 */
   height: 0;
@@ -83,7 +82,7 @@ abbr[title] {
   text-decoration: underline;
   /* 2 */
   -webkit-text-decoration: underline dotted;
-  text-decoration: underline dotted;
+          text-decoration: underline dotted;
   /* 2 */
 }
 
@@ -189,9 +188,9 @@ select {
  * Correct the inability to style clickable types in iOS and Safari.
  */
 button,
-[type="button"],
-[type="reset"],
-[type="submit"] {
+[type=button],
+[type=reset],
+[type=submit] {
   -webkit-appearance: button;
 }
 
@@ -199,9 +198,9 @@ button,
  * Remove the inner border and padding in Firefox.
  */
 button::-moz-focus-inner,
-[type="button"]::-moz-focus-inner,
-[type="reset"]::-moz-focus-inner,
-[type="submit"]::-moz-focus-inner {
+[type=button]::-moz-focus-inner,
+[type=reset]::-moz-focus-inner,
+[type=submit]::-moz-focus-inner {
   border-style: none;
   padding: 0;
 }
@@ -210,9 +209,9 @@ button::-moz-focus-inner,
  * Restore the focus styles unset by the previous rule.
  */
 button:-moz-focusring,
-[type="button"]:-moz-focusring,
-[type="reset"]:-moz-focusring,
-[type="submit"]:-moz-focusring {
+[type=button]:-moz-focusring,
+[type=reset]:-moz-focusring,
+[type=submit]:-moz-focusring {
   outline: 1px dotted ButtonText;
 }
 
@@ -230,7 +229,6 @@ fieldset {
  *    `fieldset` elements in all browsers.
  */
 legend {
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   /* 1 */
   color: inherit;
@@ -263,9 +261,8 @@ textarea {
  * 1. Add the correct box sizing in IE 10.
  * 2. Remove the padding in IE 10.
  */
-[type="checkbox"],
-[type="radio"] {
-  -webkit-box-sizing: border-box;
+[type=checkbox],
+[type=radio] {
   box-sizing: border-box;
   /* 1 */
   padding: 0;
@@ -275,8 +272,8 @@ textarea {
 /**
  * Correct the cursor style of increment and decrement buttons in Chrome.
  */
-[type="number"]::-webkit-inner-spin-button,
-[type="number"]::-webkit-outer-spin-button {
+[type=number]::-webkit-inner-spin-button,
+[type=number]::-webkit-outer-spin-button {
   height: auto;
 }
 
@@ -284,7 +281,7 @@ textarea {
  * 1. Correct the odd appearance in Chrome and Safari.
  * 2. Correct the outline style in Safari.
  */
-[type="search"] {
+[type=search] {
   -webkit-appearance: textfield;
   /* 1 */
   outline-offset: -2px;
@@ -294,7 +291,7 @@ textarea {
 /**
  * Remove the inner padding in Chrome and Safari on macOS.
  */
-[type="search"]::-webkit-search-decoration {
+[type=search]::-webkit-search-decoration {
   -webkit-appearance: none;
 }
 
@@ -347,12 +344,11 @@ html {
 }
 
 * {
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
 body {
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   font-size: 16px;
   font-weight: 300;
 }
@@ -370,7 +366,7 @@ body {
 .column {
   float: left;
   padding: 0 2vw;
-  margin: 0 0 .75rem 0;
+  margin: 0 0 0.75rem 0;
 }
 
 .small-12 {
@@ -401,12 +397,12 @@ header h2 {
 }
 
 header h1 {
-  padding: .5rem 0 0 0;
+  padding: 0.5rem 0 0 0;
   font-size: 1.95rem;
 }
 
 header h2 {
-  padding: .2rem 0 0 0;
+  padding: 0.2rem 0 0 0;
   font-size: 1.05rem;
 }
 
@@ -435,7 +431,7 @@ nav li {
 
 nav a {
   display: block;
-  padding: .8rem 0;
+  padding: 0.8rem 0;
   color: #eee;
   text-align: center;
   text-decoration: none;
@@ -466,20 +462,18 @@ main h1,
 main h3 {
   color: #9b87b8;
   font-style: italic;
-  margin: .5rem 0 .1rem 0;
+  margin: 0.5rem 0 0.1rem 0;
 }
 
 main h1 {
   font-size: 2rem;
 }
-
 main h3 {
   font-size: 1.2rem;
 }
-
 main p {
   font-size: 1.2rem;
-  margin: 0 0 .3rem 0;
+  margin: 0 0 0.3rem 0;
 }
 
 .labeled {
@@ -492,7 +486,7 @@ main p {
   background-color: rgba(255, 255, 255, 0.7);
   margin: 0;
   width: 100%;
-  padding: .3rem 1rem;
+  padding: 0.3rem 1rem;
 }
 
 .labeled h6 {
@@ -515,7 +509,7 @@ footer {
 footer h2 {
   font-style: italic;
   text-transform: uppercase;
-  margin: 1rem 0 .3rem 0;
+  margin: 1rem 0 0.3rem 0;
 }
 
 .clearfix:after {
@@ -558,7 +552,6 @@ footer h2 {
     float: left;
   }
 }
-
 /* end of media query */
 @media only screen and (min-width: 1140px) {
   .large-3 {
@@ -574,9 +567,7 @@ footer h2 {
   }
 
   nav a {
-    padding: .7rem 1rem;
+    padding: 0.7rem 1rem;
   }
 }
-
-/* end of media query */
-/*# sourceMappingURL=styles.css.map */
+/* end of media query *//*# sourceMappingURL=styles.css.map */
